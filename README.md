@@ -2,7 +2,7 @@ DepotDownloaderMod
 ===============
 IMPROTANT: This Tool require a manifest file to work Due to GetManifestRequestCode Verification.
 
-And I add dump key support: When you are obtaining the game or manifest, the decryption key will be automatically extracted to the "keys.txt" file in the root directory. The format is `${depotId}; {keyHex}`
+And I add dump key support: When you are obtaining the game or manifest, the decryption key will be automatically extracted to the "keys.txt" file in the root directory. The format is `${depotId};{keyHex}`
 
 Steam depot downloader utilizing the SteamKit2 library with depot keys support and many other features. Supports .NET 9.0  
 
