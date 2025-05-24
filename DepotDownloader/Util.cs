@@ -236,7 +236,7 @@ namespace DepotDownloader
             return output;
         
         }
-                // The static collection is used to record the DepotIDs that have been saved.
+        // The static collection is used to record the DepotIDs that have been saved.
         private static readonly HashSet<uint> SavedDepotIds = new HashSet<uint>();
         private static readonly object FileLock = new object();
 
