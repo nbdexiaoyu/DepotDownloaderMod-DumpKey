@@ -594,10 +594,10 @@ namespace DepotDownloader
             else
             {
             await steam3.RequestDepotKey(depotId, appId);
-            if (steam3.DepotKeys.TryGetValue(depotId, out depotKey))
-            {
-            Util.SaveDepotKeyToFile(depotId, depotKey); // automatically removing duplicates
-            }
+                if (steam3.DepotKeys.TryGetValue(depotId, out depotKey))
+                {
+                    Util.SaveDepotKeyToFile(depotId, depotKey); // automatically removing duplicates
+                }
             }
             if (!steam3.DepotKeys.TryGetValue(depotId, out depotKey))
             {
