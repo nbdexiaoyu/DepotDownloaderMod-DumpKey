@@ -583,7 +583,7 @@ namespace DepotDownloader
                     return null;
                 }
             }
-
+            //Dump key support
             byte[] depotKey = null;
             if (DepotKeyStore.ContainsKey(depotId))
             {
