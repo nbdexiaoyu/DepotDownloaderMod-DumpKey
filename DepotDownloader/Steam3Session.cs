@@ -282,7 +282,12 @@ namespace DepotDownloader
             }
             else
             {
-                Console.WriteLine($"Got manifest request code for depot {depotId} from app {appId}, manifest {manifestId}, result: {requestCode}");
+                Console.WriteLine($"Got manifest request code for depot {depotId} from app {appId}, manifest {manifestId}, result: {requestCode}"); 
+                Console.WriteLine($"[SUCCESS] Got manifest request code: {requestCode}");
+                Console.WriteLine($"  Depot: {depotId}");
+                Console.WriteLine($"  Manifest: {manifestId}");
+                Console.WriteLine($"  Branch: {branch}");
+                Console.WriteLine($"  Code: {requestCode} (0x{requestCode:X})");
             }
 
             return requestCode;
